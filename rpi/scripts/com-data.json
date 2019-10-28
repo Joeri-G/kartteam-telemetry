@@ -1,0 +1,8 @@
+{
+  "sens_temp_1": {"value": ["666", "420"], "average": true},
+  "tire_temp_1": {"value": ["71", "58", "90", "81"], "average": true},
+  "speed": {"value": "70", "average": false},
+  "battery_1": {"value": ["34", "3", "45", "76", "78"], "average": false},
+  "battery_2": {"value": ["223", "5", "23", "67", "45"], "average": false},
+  "something": {"value": "5", "average": false}
+}

@@ -1,0 +1,159 @@
+/*background by Manuel Pinto*/
+html, body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #ebd547, #f5d515);
+	background-size: 400% 500%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+/* elements */
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  top: 0;
+  margin-top: 0;
+  background: white;
+}
+/* media queries */
+@media (min-width: 701px) {
+  #main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #main {
+    margin: 1%;
+  }
+}
+@media (max-width: 700px) {
+  #main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#main {
+  display: grid;
+}
+/* The Modal (background) */
+#message_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+#message_modal > div {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 24px;
+  border: 1px solid #888;
+  border-radius: 16px;
+  width: 30%;
+  text-align: center;
+}
+/* The Close Button */
+#close_modal {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close_modal:hover,
+#close_modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#message_modal button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  font-size: 16px;
+  border: solid 1px black;
+  padding: 4px;
+  align-self: center;
+  border-radius: 8px;
+}
+.graph-container p, .raw-container p {
+  padding-left: 8px;
+  font-size: 24px;
+}
+.logout {
+  padding-right: 16px;
+  float: right;
+}
+.graph-container, .raw-container {
+  background: white;
+  padding: .5em;
+  margin: .5em;
+}
+.raw-container {
+  background: black;
+  color: white;
+  display: none;
+}
+.raw-container p, .raw-container a {
+  color: white;
+}
+.raw-container > div {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.raw-container > div > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.raw-container span {
+  border: solid 1px white;
+  margin: 1em;
+  padding: 1em;
+}
