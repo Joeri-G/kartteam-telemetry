@@ -24,7 +24,7 @@ try:
             #testdata
             data = '{\n"sens_temp_1": {"value": ["666", "420"], "average": true},\n"tire_temp_1": {"value": ["71", "58", "90", "81"], "average": true},\n"speed": {"value": "70", "average": false},\n"battery_1": {"value": ["34", "3", "45", "76", "78"], "average": false},\n"battery_2": {"value": ["223", "5", "23", "67", "45"], "average": false},\n"something": {"value": "5", "average": false}\n}';
             print('\n--------------\n'+data.replace('\n', '').replace('\t', '').replace(' ', ''));
-            f = open('/run/com-data.js', 'w');
+            f = open('/run/com-data.json', 'w');
             f.write(data);
             f.close();
             time.sleep(0.5);
